@@ -1,0 +1,46 @@
+video {
+    border:1px solid #000000;
+    cursor: pointer;
+}
+
+canvas {
+    cursor: pointer;
+    -webkit-user-select: none;
+}
+
+@-webkit-keyframes rotate {
+    from {
+        -webkit-transform: rotate(0deg);
+        width: 320px;
+        height:240px;
+        margin-top:0
+    }
+    to {
+        -webkit-transform: rotate(360deg) ;
+        width: 0;
+        height:0;
+        border:none;
+
+    }
+}
+.rotating {
+    transform-origin:50% 50%;
+    -webkit-animation-name:             rotate;
+    -webkit-animation-duration:         1s;
+    -webkit-animation-iteration-count:  1;
+    -webkit-transition-timing-function: linear;
+    -webkit-animation-fill-mode:forwards
+}
+
+#sensitivitySlider {
+    width: 640px;
+}
+
+#targetColor {
+    width: 640px;
+    height: 30px;
+    border:1px solid gray;
+}
+#stableCanvas {
+    border: 1px solid gray;
+}

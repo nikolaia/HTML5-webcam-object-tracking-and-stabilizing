@@ -1,0 +1,38 @@
+<html>
+
+    <head>
+    <link rel="stylesheet" type="text/css" href="stabilizer.css"></head>
+    <body>
+    <h1>Color tracking and image stabilizing in HTML5 and JavaScript</h1>
+
+    <p>
+        <h2>Sensitiity</h2>
+        <input type="range" min="0" max="100" id="sensitivitySlider">
+    </p>
+    <p>
+        <h2>Scale</h2>
+        <input id="scale" type="range" min="0" max="15">
+    </p>
+
+    <video width="320" height="240" >
+
+    </video>
+
+    <canvas width="320" height="240" id="trackerCanvas">
+
+    </canvas>
+
+    <div id="targetColor">
+
+    </div>
+
+    <br>
+
+    <canvas width="320" height="240" id="stableCanvas">
+
+    </canvas>
+
+    <script src="stabilizer.js" type="text/javascript"></script>
+    </body>
+
+</html
